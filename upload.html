@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Main</title>
+    <!--로고 폰트-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@1,700&family=Josefin+Slab:wght@100&display=swap" rel="stylesheet">
+</head>
+<body>
+<style>
+    nav{
+        display: inline-block;
+    }
+    a{
+        text-decoration: none;
+        color: black;
+        font-weight: 600;
+    }
+    a:hover{
+        color: red;
+    }
+
+</style>
+
+<header>
+    <!--로그인 한 상태일 경우-->
+    <div style="text-align: right" >
+        <a href="logout.html" style="font-size: 0.7rem">로그아웃</a>
+        <strong style="display: inline-block; font-size: 0.7rem"> | </strong>
+        <a href="mypage.html" style="font-size: 0.7rem">마이페이지</a>
+    </div>
+
+    <!--로고와 네비게이션 표현-->
+    <div style="margin: 0rem 2rem 1rem 2rem; height: 3rem">
+        <!--로고-->
+        <a href="main.html">
+            <img src="images/LG_logo.png" alt="LG_logo" title="LG_logo" style="width: 3rem; height: 3rem; display: inline-block">
+            <h1 style="display: inline-block; font-family: 'EB Garamond', serif;font-family: 'Josefin Slab', serif;">LG Labeling</h1>
+        </a>
+
+        <!--네비게이션바-->
+        <div style="text-align: center; display: inline-block; margin-left: 5rem">
+            <nav style="margin-right: 2rem">
+                <a href="upload.html">Data Upload</a>
+            </nav>
+            <nav style="margin-right: 2rem">
+                <a href="working.html">1차 작업</a>
+            </nav>
+            <nav style="margin-right: 2rem">
+                <a href="inspection.html">2차 작업</a>
+            </nav>
+            <nav style="margin-right: 2rem">
+                <a href="dashboard.html">작업 현황</a>
+            </nav>
+            <nav style="">
+                <a href="export.html">Data Export</a>
+            </nav>
+        </div>
+    </div>
+
+</header>
+
+<div style="width: 100%; text-align: center">
+    <div style="width: 50rem; height: 25rem; margin: 3rem 3rem 3rem 3rem; display: inline-block">
+
+        <!-- 제품군 선택 (h5, select, input태그)-->
+        <form action="" method="get">
+            <div style="text-align: left">
+                <h5 style="display: inline-block">제품 선택</h5>
+                <select name='product' style="display: inline-block; width: 7rem; height: 1.5rem ">
+                    <option value='' selected>-- 선택 --</option>
+                    <option value='apple'>청소기</option>
+                    <option value='banana'>냉장고</option>
+                    <option value='lemon'>식기세척기</option>
+                </select>
+                <input type="submit" value="선택 완료">
+            </div>
+        </form>
+
+        <!-- 카테고리 보기 및 생성-->
+        <form action="" method="post">
+            <h5 style="text-align: left; margin-bottom: 0.5rem">카테고리</h5>
+            <div style="display: inline-block; width: 100%; height: 18rem; background-color: #eeeeee; border-radius: 1rem; padding: 1rem 1rem 1rem 1rem">
+
+                <!-- 카테고리 리스트 -->
+                <div style="height: 16rem">
+
+                </div>
+
+                <!-- 카테고리 생성 -->
+                <div style="text-align: right">
+                    <input type="text" name="category_name" placeholder="카테고리명 입력">
+                    <input type="submit" value="+" class="btn btn-primary">
+                </div>
+            </div>
+        </form>
+
+
+    </div>
+</div>
+
+<footer>
+
+    <div style="text-align: center; margin:1rem 5rem 1rem 5rem;">
+        <hr>
+        <img src="images/LG_logo.png" alt="LG_logo" title="LG_logo" style="width: 1rem; height: 1rem">
+        <h4 style="display: inline-block; font-family: 'EB Garamond', serif;font-family: 'Josefin Slab', serif;">LG Labeling</h4>
+        <div style="display: block; font-size: 0.5rem">
+            고객지원:010-0000-0000  기타 문의:dongeui@deu.ac.kr
+        </div>
+
+
+    </div>
+
+</footer>
+</body>
+</html>
